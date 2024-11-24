@@ -1,0 +1,71 @@
+/* Inceputul Indexului */
+
+/* Bara de navigat */
+.navigatie {
+    list-style: none;
+    background: #3c4da7;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    
+}
+
+
+
+.nevagatie >li{
+    border-bottom: solid, 1px, white;
+}
+
+.navigatie >li > a {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 12px 24px;
+    display: inline-block;
+
+}
+/* Sfarsitul barii de navigat */
+
+/* Dsiplay color  */
+ body {
+    background: linear-gradient(to right, #0b2191, #3e50a8 );
+    font-family: sans-serif;
+}
+
+.navigatie>li:hover {
+    color: yellow;
+    background-color: red;
+    border-radius: 7%;
+    transition: background-color 0.4s;
+}
+/* Diplsay color */
+
+/* Logo */
+
+.Logo {
+    text-align: center;
+    margin-top: 250px;
+}
+
+.Logo img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+/* Logo */
+
+
+/* Page */
+* {
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+
+/* Page */
+
+@media screen and (min-width: 600px) {
+    .navigatie>li {
+        display: inline-block;
+        border: none;
+    }
+}
+/* Sfarsitul indexului */

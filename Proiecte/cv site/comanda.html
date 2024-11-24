@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALU PRO SERVICES</title>
+    <link rel="stylesheet" href="styleorder.css">
+</head>
+<body>
+    <a href="index.html"> <!-- Sau "/" pentru pagina de start a site-ului -->
+        <img src="imagini/LOGO 2.PNG" alt="Logo" />
+    </a>
+    
+    <!-- Formularul de comandă -->
+    <form id="order-form">
+        <label for="Numele"> Numele complet:</label>
+        <input type="text" name="Numele" id="Numele" placeholder="Introduceti numele dvs." required minlength="3" maxlength="20"><br>
+
+        <label for="email"> Adresa ta de email:</label>
+        <input type="email" name="email" id="email" placeholder="Introduceti email-ul dvs." required><br>
+
+        <label for="Numar">Numărul de contact:</label>
+        <input type="tel" name="Numar" id="Numar" placeholder="Introduceți numărul dvs. de contact." 
+               required pattern="^\d{10,14}$" minlength="10" maxlength="14"><br>
+
+        <label for="data">Data dorită spre plecare:</label>
+        <input type="date" name="data" id="data" required><br>
+        
+        <script>
+            // Obține data curentă în formatul YYYY-MM-DD
+            const today = new Date().toISOString().split('T')[0];
+            
+            // Setează atributul min al inputului pentru a preveni selectarea unei date din trecut
+            document.getElementById('data').setAttribute('min', today);
+        </script>
+
+        <label for="Tara">Țara dorită:</label>
+        <select name="Variante" id="Variante" required>
+            <option>Olanda</option>
+            <option>Belgia</option>
+            <option>Germania</option>
+            <option>Austria</option>
+            <option>Ungaria</option>
+            <option>Romania</option>
+        </select><br>
+
+        <!-- Buton de redirecționare către pagina de plată -->
+        <button type="button" id="pay-button">Către plata</button>
+
+        <!-- Buton de resetare -->
+        <button type="reset">Resetează</button>
+    </form>
+
+    <script>
+        // Adăugăm un eveniment pentru butonul "Către plata"
+        document.getElementById('pay-button').addEventListener('click', function(event) {
+            // Verificăm dacă formularul este valid
+            const form = document.getElementById('order-form');
+            
+            // Dacă formularul este valid
+            if (form.checkValidity()) {
+                // Resetăm formularul înainte de a face redirecționarea
+                form.reset();
+
+                // Redirecționăm utilizatorul către pagina de plată
+                window.location.href = 'https://secure.netopia-payments.com/ui/card?p=BtNaJta4-3Ybrf8-b54vC252';
+            } else {
+                // Dacă formularul nu este valid, prevenim redirecționarea
+                alert('Te rugăm să completezi toate câmpurile corect înainte de a merge la plată.');
+            }
+        });
+    </script>
+</body>
+</html>
+

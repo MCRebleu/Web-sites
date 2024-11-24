@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALU PRO SERVICES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Stiluri generale */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(180deg, #1a00ad, #dff800, #f50505);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            background-attachment: fixed; /* Pentru un efect mai fluid */
+        }
+
+        header {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        header img {
+            width: 200px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Stiluri pentru tabel */
+        table {
+            border-collapse: collapse;
+            width: 90%;
+            margin: 20px auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #0056b3;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        tr:hover {
+            background-color: #e3f2fd;
+        }
+
+        td {
+            font-size: 1rem;
+        }
+
+        em {
+            color: #0056b3;
+        }
+
+        /* Responsivitate */
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+
+            th, td {
+                font-size: 0.9rem;
+                padding: 10px;
+            }
+
+            h1 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html"> <!-- Sau "/" pentru pagina de start a site-ului -->
+            <img src="imagini/LOGO 2.PNG" alt="Logo" />
+        </a>
+        <h1>KALU PRO SERVICES</h1>
+    </header>
+
+    <table>
+        <tr>
+            <th>Nume Șofer</th>
+            <th>Tip Șofer</th>
+            <th>Număr de Contact</th>
+            <th>Experiență</th>
+        </tr>
+        <tr>
+            <td>Alexandru</td>
+            <td><strong><em>Șofer Principal</em></strong></td>
+            <td>+40 722 222 222</td>
+            <td>10 Ani</td>
+        </tr>
+        <tr>
+            <td>Ionuț</td>
+            <td><strong><em>Șofer Secundar</em></strong></td>
+            <td>+40 788 888 888</td>
+            <td>2 Ani</td>
+        </tr>
+    </table>
+</body>
+
+</html>

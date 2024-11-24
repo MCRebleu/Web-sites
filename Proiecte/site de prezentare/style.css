@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* GLobal style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General style */
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #f8f8f8;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+/* Header style */
+header {
+    color: #ffffff;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    box-shadow: 0 2px 5px rgba(2, 157, 247, 0.2); /* Umbră pentru efect vizual */
+    padding: 1rem 0;
+    display: grid;
+    justify-content: center; /* Centrare pe orizontală */
+    align-items: center; /* Centrare pe verticală */
+}
+
+header > .container {
+    display: flex;
+    justify-content: center; /* Aliniere între logo și butonul de meniu */
+    width: 100%;
+    max-width: 1400px; /* Asigură-te că containerul are o lățime maximă fixă */
+    padding: 0 1rem;
+}
+
+header .logo > a {
+    color: aqua;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: block;
+    transition: .5s ease-out;
+    
+    
+
+}
+.logo:hover{
+    color: gold;
+    transform: translateX(10px);
+    
+}
+
+header .btn-meniu {
+    background: transparent;
+    color: azure;
+    border: solid 5px white;
+    margin-top: .5rem;
+    border-radius: 100px;
+    padding: .1rem 1rem;
+    cursor: pointer;
+    margin-left: .1rem; /* Asigură un spațiu între logo și buton */
+    font-size: 1rem;
+    margin-top: 20px;
+    
+}
+
+/* Navigation style */
+header .navigation {
+    flex-basis: 100%;
+    margin-top: 1rem;
+    display: none;
+}
+
+header .navigation.active {
+    display: block;
+}
+
+header .nav-items {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-items .nav-link {
+    text-decoration: none;
+    color: white;
+    padding: .5rem 1rem;
+    display: block;
+    border-radius: 100px;
+    transition: all .3s ease;
+}
+
+.nav-items .nav-link:hover {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    padding-left: .5rem;
+}
+
+/* Hero section */
+.hero {
+    height: 90vh;
+    background: url('./imagini/Tema.PNG') center center/cover no-repeat;
+    position: relative;
+}
+
+.hero-overlay {
+    color: #ffffff;
+    background: #00000090;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content {
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero-content p {
+    margin-bottom: 2rem;
+}
+
+.hero .btn-oferta {
+    text-decoration: none;
+    color: #f6f7f4;
+    background-color: rgb(6, 2, 255);
+    display: inline-block;
+    padding: 1rem 2rem;
+    border-radius: 100px;
+    transition: all .5s ease;
+}
+
+.hero .btn-oferta:hover {
+    color: rgb(237, 243, 243);
+    background-color: rgb(6, 253, 18);
+}
+
+/* Servicii section */
+.services {
+    text-align: center;
+    padding: 2rem 0;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+}
+
+.services .container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap; /* Permite ca elementele să se regleze pe mai multe rânduri pe ecrane mai mici */
+}
+
+.service-card {
+    text-align: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    border-radius: 100px;
+    padding: 1rem;
+    width: 280px; /* Lățimea cardurilor, ajustabilă pentru diverse dimensiuni */
+    transition: box-shadow .5s ease-in-out;
+}
+
+.service-card:hover {
+    box-shadow: 0 10px 30px rgba(5, 1, 248, 0.1);
+}
+
+.service-card .service-title {
+    font-size: 1.125rem;
+    margin-bottom: .5rem;
+    
+}
+
+
+/* Proiecte section */
+.projects {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    padding: 2rem 0;
+    text-align: center;
+    
+}
+
+.projects .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+.project-card {
+    background-color: white;
+    max-width: 400px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Umbră pentru carduri */
+}
+
+.project-card .project-link {
+    display: block;
+    position: static;
+    height: 300px;
+}
+
+.project-card .project-overlay {
+    border-radius: 100px;
+    font-weight: bold;
+    color: rgb(5, 150, 240);
+    background-color: transparent;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .25s ease-in-out;
+
+    
+}
+
+.project-card .project-overlay span {
+    border: solid 5px rgb(7, 2, 2);
+    padding: 2rem;
+    border-radius: 100px;
+}
+
+.project-card .project-link img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card .project-link:hover .project-overlay {
+    opacity: 1;
+}
+
+.project-card .project-details {
+    text-align: center;
+    padding: 1rem;
+    color: black;
+}
+
+.project-card .project-details h3 {
+    margin-bottom: .5rem;
+}
+
+
+
+
+/* Footer style */
+footer {
+    background-color: #111;
+    padding: 1rem;
+    text-align: center;
+    color: #fff;
+}
+
+.copy {
+    color: #05b7ee;
+    font-size: 1rem;
+}
+
+/* Media queries */
+@media screen and (min-width: 768px) {
+    .btn-oferta {
+        font-size: 1rem;
+        padding: 1rem 3rem;
+    }
+    .nav-items{
+        
+        display: block; /* Ascunde bara de navigație pe mobil */
+        flex-direction: column;
+        text-align: center;
+    }
+    
+}
+
+footer{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+}
+.copy {
+    color: #f7e302;
+    font-size: 1rem;
+    text-align: center;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    transition: all .5s ease;
+}
+
+.copy:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+

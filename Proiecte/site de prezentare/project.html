@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculare Ore Muncite</title>
+    <link rel="stylesheet" href="proiect.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculator Ore Muncite</h1>
+        <form id="timeForm">
+            <label for="startTime">Ora de început:</label>
+            <input type="time" id="startTime" required>
+            
+            <label for="endTime">Ora de sfârșit:</label>
+            <input type="time" id="endTime" required>
+            
+            <button type="button" id="calculateBtn">Calculează</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="test.js" defer></script> <!-- Asigură-te că script.js este în același folder cu acest HTML -->
+</body>
+</html>

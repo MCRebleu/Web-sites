@@ -1,0 +1,124 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    font-size: 1rem;
+    color: aqua;
+    display: grid;
+    top: auto;
+    display: flex; /* Activează Flexbox */
+    flex-direction: column; /* Așază elementele pe verticală (unul sub altul) */
+    align-items: center; /* Centrează pe orizontală */
+    justify-content: center; /* Centrează pe verticală */
+    height: 100vh; /* Ocupă înălțimea întregii pagini */
+    text-align: center 
+}
+
+.logo{
+    font-size: 30px;
+    justify-content: center;
+    background: linear-gradient(90deg, #050560, #00d4ff, #b30508);
+    color: antiquewhite;
+    display: grid;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    transition: all .10s ease-in-out;
+    border-radius: 100px;
+
+}
+
+.logo:hover{
+    color: rgb(231, 252, 1);
+    transform: translateX(10px);
+}
+
+h1, p {
+    margin: 10%; /* Elimină spațiul implicit */
+}
+
+header .container{
+    padding: 100px;
+    border: solid 5px transparent;
+    margin-top: .5rem;
+    display: grid;
+    padding: 1rem .5rem;
+    margin: 5px;
+    position: static;
+    text-align: center;
+}
+
+.container .btn-submit{
+    padding: 1px;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(63, 240, 4);
+    width: 100%;
+    transition: all .5s ease-in-out;
+    border: 0;
+    padding: 1rem 1rem;  
+    margin-top: 10px;   
+}
+
+.btn-submit:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    padding-left: 1rem;
+    transform: translateX(10px);
+}
+
+.container .btn-reset{
+    padding: 1px;
+    border-radius: 100px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(254, 255, 254);
+    width: 50%;
+    transition: all .5s ease-in-out;
+    border: 0;
+    padding: 1rem 1rem;  
+    margin-top: 10px;
+}
+
+.btn-reset:hover{
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    padding-left: 1rem;
+    transform: translateX(10px);
+}
+
+
+#nume, #email, #telefon,#subiect ,#mesaj {
+    padding-top: 1px;
+    border-radius: 20px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(251, 250, 253);
+    width: 100%;
+    font-size: 0.8rem
+    border: 0;
+    padding: 1rem 1rem;
+    border: solid;  
+    height: 6vh;
+    margin-bottom: 10px; /* Adaugă spațiu între câmpuri */
+    text-align: center;
+}
+
+#nume:hover, #email:hover, #telefon:hover ,#subiect:hover ,#mesaj:hover{
+    transform: translateX(10px);
+    transition: all .25s eas;
+}
+
+footer{
+    position: fixed; /* Fixează poziția */
+    bottom: 0; /* Plasează la baza paginii */
+    left: 0; /* Aliniază la marginea stângă */
+    width: 100%; /* Ocupă întreaga lățime */
+    text-align: center; /* Centrează textul */
+    padding: 10px 0; /* Adaugă spațiu interior */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(179,5,8,1) 63%, rgba(0,212,255,1) 100%);
+    color: white; /* Culoarea textului */
+    font-size: 0.8rem; /* Dimensiunea textului */
+}
+
+

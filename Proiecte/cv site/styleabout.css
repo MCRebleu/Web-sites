@@ -1,0 +1,13 @@
+body {
+    background: linear-gradient(to right, #f6c17b, #f39c57);
+    font-family: sans-serif;
+}
+
+h1  {
+
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.maps >  {
+    color: rgb(9, 0, 15);
+}

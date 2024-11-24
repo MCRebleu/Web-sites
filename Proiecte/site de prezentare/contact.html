@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+    
+</head>
+<body>
+    <header>
+        
+        <a href="index.html" class="logo">Designer Front-End</a>
+        <div class="text">
+            <h1>Formular de contact</h1>
+            <p>Completeaza formularul cu datele personale pentru a intra in contact.</p>
+        </div>
+    </header>
+    
+    <main>
+        <form action="https://formsubmit.co/mcrebelu@gmail.com" method="POST" class="container">
+            <label for="nume">Numele:</label>
+            <input type="text" class="tabel" name="Numele" id="nume" placeholder="Numele tau sau al firmei." required>
+            
+            <label for="email">E-mail:</label>
+            <input type="email" class="email" name="E-mail" id="email" placeholder="E-mail" required>
+            
+            <label for="telefon">Numar de contact:</label>
+            <input type="tel" class="numar" name="Telefon" id="telefon" minlength="10" maxlength="15" placeholder="Numarul de telefon" required>
+            
+            <label for="mesaj">Subiect</label>
+            <input type="text" class="text-tabel" name="Subiect" id="subiect" placeholder="Subiect" required>
+            <label for="mesaj">Trimite-mi mesajul tau:</label>
+            <input type="text" class="text-tabel" name="Mesaj" id="mesaj" placeholder="Simte-te liber/a sa-mi scrii ceea ce doresti ^_^" required>
+            
+            <button type="submit" class="btn-submit">Trimite!</button>
+            <Button type="reset" class="btn-reset">Reset</Button>
+        </form>
+    </main>
+    
+    <footer>
+        <div class="copy">
+            &copy; Toate drepturile rezervate către Pincu Vasile-Ionel.
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALU PRO SERVICES</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Fundal animat */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(120deg, #1a00ad, #f50505, #1a00ad);
+            background-size: 300% 300%; /* Dimensiuni pentru animație */
+            animation: moveBackground 10s infinite linear; /* Animație continuă */
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        @keyframes moveBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        /* Header cu animație */
+        header {
+            width: 100%;
+            text-align: center;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* fundal transparent */
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header a {
+            display: inline-block;
+        }
+
+        header img {
+            width: 150px;
+            transition: transform 0.3s ease-in-out; /* Animație la hover */
+        }
+
+        header img:hover {
+            transform: scale(1.1); /* Mărește imaginea logo-ului la hover */
+        }
+
+        h1, h2 {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+            animation: fadeInUp 1.5s ease-out; /* Animație text */
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Secțiuni */
+        section {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            color: #333;
+        }
+
+        section h1, section h2 {
+            color: #1a00ad;
+            margin-bottom: 10px;
+        }
+
+        section p {
+            line-height: 1.6;
+            font-size: 1rem;
+        }
+
+        /* Listă stilizată */
+        ol {
+            list-style: decimal;
+            margin-left: 20px;
+            color: #1a00ad;
+        }
+
+        ul {
+            list-style: circle;
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            font-size: 0.8rem;
+            background: rgba(0, 0, 0, 0.8);
+            color: #fff;
+            width: 100%;
+        }
+
+        footer a {
+            color: #dff800;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <img src="imagini/LOGO 2.PNG" alt="Logo KALU PRO SERVICES">
+        </a>
+    </header>
+
+    <section>
+        <h1 id="aboutus">Despre noi:</h1>
+        <p>
+            KALU PRO SERVICES este o firmă nouă, înființată în anul 2024, care se ocupă cu transportarea clienților în 
+            <strong>Europa</strong>. Avem diferite prețuri pentru diferite bugete. Prețurile diferă în funcție de transportul 
+            în țara dorită. Prețurile încep de la <strong>100 EURO DE PERSOANĂ</strong>.
+        </p>
+    </section>
+
+    <section class="maps">
+        <h2 id="maps">Țările prin care călătorim sunt următoarele:</h2>
+        <p>Pornim din:</p>
+        <ol>
+            <li>Olanda
+                <ul>
+                    <li>Terneuzen</li>
+                </ul>
+            </li>
+            <li>Belgia
+                <ul>
+                    <li>Antwerp</li>
+                </ul>
+            </li>
+            <li>Germania
+                <ul>
+                    <li>Frankfurt</li>
+                </ul>
+            </li>
+            <li>Austria
+                <ul>
+                    <li>Viena</li>
+                </ul>
+            </li>
+            <li>Ungaria
+                <ul>
+                    <li>Budapesta</li>
+                </ul>
+            </li>
+            <li>România
+                <ul>
+                    <li>Focșani</li>
+                </ul>
+            </li>
+            <li>Retur</li>
+        </ol>
+    </section>
+
+    <footer>
+        &copy; 2024 Toate drepturile rezervate către <a href="#">KALU PRO SERVICES B.V.</a>
+    </footer>
+</body>
+
+</html>

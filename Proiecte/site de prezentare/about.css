@@ -1,0 +1,154 @@
+/* Fundal animat pentru text */
+@keyframes colorChange {
+    0% {
+        color: #f8e71c; /* Galben */
+        text-shadow: 2px 2px 0px #e8c800, 4px 4px 0px #d1a700, 6px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+    25% {
+        color: #ff5733; /* Portocaliu */
+        text-shadow: 2px 2px 0px #e84d20, 4px 4px 0px #c4421b, 6px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+        color: #33d9ff; /* Albastru deschis */
+        text-shadow: 2px 2px 0px #2cb8e0, 4px 4px 0px #249ac0, 6px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+    75% {
+        color: #aaff33; /* Verde deschis */
+        text-shadow: 2px 2px 0px #89c020, 4px 4px 0px #6ca019, 6px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+        color: #f8e71c; /* Galben (revenire) */
+        text-shadow: 2px 2px 0px #e8c800, 4px 4px 0px #d1a700, 6px 6px 2px rgba(0, 0, 0, 0.5);
+    }
+}
+
+body {
+    background: linear-gradient(90deg, #050560, #00d4ff, #b30508);
+    background-size: 300% 300%; /* Fundal animabil */
+    animation: gradientAnimation 8s ease infinite; /* Animație fundal */
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    display: grid;
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Fundal animat */
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.logo {
+    font-size: 30px;
+    justify-content: center;
+    background: linear-gradient(90deg, #050560, #00d4ff, #b30508);
+    color: antiquewhite;
+    display: grid;
+    text-decoration: none;
+    padding: 1rem 1rem;
+    transition: all .10s ease-in-out;
+    border-radius: 100px;
+}
+
+.logo:hover {
+    color: rgb(231, 252, 1);
+    transform: translateX(10px);
+}
+
+.cine {
+    font-size: 50px;
+    display: grid;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    animation: colorChange 5s linear infinite; /* Aplică animația culorii */
+}
+
+.para {
+    font-size: 25px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 10px auto;
+    text-align: center;
+    max-width: 600px;
+    line-height: 1.6;
+    color: #e0e0e0;
+    padding: 10px;
+    border-radius: 70px;
+    background: linear-gradient(90deg, #050560, #00d4ff, #b30508);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 1px 1px 1px #fdfdfc;
+}
+
+footer {
+    background: linear-gradient(90deg, #050560, #00d4ff, #b30508);
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Spațiu între iconițe */
+}
+
+.social-links .icon {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    transition: transform 0.3s, color 0.3s; /* Efect de hover */
+}
+
+.social-links .icon:hover {
+    transform: scale(1.2); /* Mărește iconița la hover */
+    color: #00d4ff; /* Schimbă culoarea la hover */
+}
+
+.social-links .youtube:hover { color: #ff0000; } /* Culoare specifică YouTube */
+.social-links .instagram:hover { color: #e1306c; } /* Culoare specifică Instagram */
+.social-links .facebook:hover { color: #3b5998; } /* Culoare specifică Facebook */
+.social-links .tiktok:hover { color: #69c9d0; } /* Culoare specifică TikTok */
+
+
+/* Animație pentru marginile neon */
+@keyframes borderNeon {
+    0% {
+        border-color: #f8e71c; /* Galben */
+        box-shadow: 0 0 10px #f8e71c, 0 0 20px #f8e71c, 0 0 30px #f8e71c;
+    }
+    33% {
+        border-color: #ff5733; /* Roșu */
+        box-shadow: 0 0 10px #ff5733, 0 0 20px #ff5733, 0 0 30px #ff5733;
+    }
+    66% {
+        border-color: #33d9ff; /* Albastru */
+        box-shadow: 0 0 10px #33d9ff, 0 0 20px #33d9ff, 0 0 30px #33d9ff;
+    }
+    100% {
+        border-color: #f8e71c; /* Reveniți la galben */
+        box-shadow: 0 0 10px #f8e71c, 0 0 20px #f8e71c, 0 0 30px #f8e71c;
+    }
+}
+
+/* Aplică animația pentru marginile elementelor */
+.logo, .cine, .para, footer {
+    position: relative;
+    border: 4px solid transparent;
+    padding: 10px;
+    animation: borderNeon 3s ease-in-out infinite; /* Aplică animația pentru bordura neon */
+    border-radius: 10px; /* Rounding corners for a smoother effect */
+}
+
+/* Păstrează animația activă și pentru hover */
+.logo:hover, .cine:hover, .para:hover, footer:hover {
+    animation: borderNeon 3s ease-in-out infinite;
+}

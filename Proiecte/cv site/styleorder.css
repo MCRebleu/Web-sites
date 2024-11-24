@@ -1,0 +1,98 @@
+body {
+    background: linear-gradient(to right, #1a00ad, #dff800, #f50505);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Asigură că pagina ocupă toată înălțimea ecranului */
+    margin: 0; /* Elimină marginea implicită */
+}
+
+/* Stil pentru logo */
+a.logo {
+    display: block; /* Asigură că link-ul logo ocupă întreaga lățime disponibilă */
+    text-align: center; /* Aliniază imaginea central pe orizontală */
+    margin-bottom: 20px; /* Adaugă un spațiu între logo și formular */
+}
+
+a.logo img {
+    max-width: 200px; /* Ajustează dimensiunea maximă a logo-ului */
+    height: auto; /* Menține proporțiile corecte ale imaginii */
+}
+
+/* Stil pentru formular */
+form {
+    font-size: 1.5rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: center;
+    display: flex; /* Folosim Flexbox pentru formular */
+    flex-direction: column; /* Aranjăm elementele pe coloană (vertical) */
+    align-items: center; /* Aliniază elementele pe axa orizontală */
+    gap: 20px; /* Adaugă spațiu între elemente */
+    width: 80%;
+    max-width: 600px; /* Limitează lățimea formularului */
+    margin: 0 auto; /* Centrează formularul pe orizontală */
+}
+
+/* Stiluri pentru inputuri și selecturi */
+form input, form select {
+    font-size: 1.5rem;
+    padding: 12px 20px;
+    margin: 0;
+    border: 2px solid #000;
+    border-radius: 8px;
+    width: 100%; /* Ocupă întreaga lățime disponibilă */
+    max-width: 100%; /* Limitează lățimea inputului */
+    box-sizing: border-box;
+}
+
+/* Stiluri pentru butoane */
+button {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Adaugă tranziție pentru efecte */
+    width: 80%;
+    max-width: 400px;
+    box-sizing: border-box;
+    margin-top: 10px; /* Adaugă un mic spațiu între butoane și elementele de deasupra */
+}
+
+/* Stiluri pentru butoane de reset și submit */
+.reset-btn {
+    background-color: #e20724;
+    color: white;
+    box-shadow: 0 4px 10px rgba(226, 7, 36, 0.2); /* Adaugă o umbră subtilă */
+}
+
+.submit-btn {
+    background-color: #04f3d7;
+    color: white;
+    box-shadow: 0 4px 10px rgba(4, 243, 215, 0.2); /* Adaugă o umbră subtilă */
+}
+
+/* Efecte la hover pentru butoane */
+button:hover {
+    transform: translateY(-3px); /* Creează un efect de ridicare */
+    background-color: #0408f3; /* Schimbă culoarea la hover */
+    color: white; /* Culoarea textului când butonul este hover */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); /* Întărește umbra la hover */
+}
+
+/* Efecte la focus pentru butoane */
+button:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3); /* Efect de umbră la focus */
+}
+
+/* Stiluri pentru butoanele de reset și submit în hover */
+.reset-btn:hover {
+    background-color: #d40518; /* Nuantă mai închisă la hover */
+}
+
+.submit-btn:hover {
+    background-color: #029f94; /* Nuantă mai închisă la hover */
+}
